@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hashw\\source\\repos\\Sales Dashboard Data Load\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{703D6529-68CE-4260-B3AC-8A86C3D69532}|Sales Dashboard Data Load\\Sales Dashboard Data Load.dtproj|C:\\Users\\hashw\\source\\repos\\Sales Dashboard Data Load\\Sales Dashboard Data Load\\Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{703D6529-68CE-4260-B3AC-8A86C3D69532}|Sales Dashboard Data Load\\Sales Dashboard Data Load.dtproj|solutionrelative:Sales Dashboard Data Load\\Package.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Package.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\hashw\\source\\repos\\Sales Dashboard Data Load\\Sales Dashboard Data Load\\Package.dtsx",
+              "RelativeDocumentMoniker": "Sales Dashboard Data Load\\Package.dtsx",
+              "ToolTip": "C:\\Users\\hashw\\source\\repos\\Sales Dashboard Data Load\\Sales Dashboard Data Load\\Package.dtsx [Design]",
+              "RelativeToolTip": "Sales Dashboard Data Load\\Package.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAc4SURBVFhHzZjbcxxHFcZ/szurnd3VSo5srRRLluVLgrEV3yLbcUKCCbaJISROOZQhYEMVFUhSwEP\u002BAXjiH8gLVIUqLpVyeMhTnqiEmEBR5GID5YCxUWwjY8vSyrrvzuzuTPfhoWfWsxfZcoqHfFVHo\u002Bnpnv66z3dOn1n4NEFErPj9ye\u002B9/MrO0Ye/KqLRSlCiQQQRQYugtQYNWrS5FwWCaRcItEZEENGUXff0R2fe\u002B/mf3nrjvfgcd0IDoRdf/vGpkye\u002BeXzDYMEQAZQWRBtCSkCUEAgoJWhtLNACWvDDfv\u002B8MMbYpctzkzdu/O78ufdf\u002BfAPb/4lPs/tkIzfjD70\u002BWcf2b9nZMNggVzWoTPrkMs65HMO\u002BVyGrs4M3Z0O3fkMq7oy3NOVpac7S8\u002BqLKtX5VhzT45CTyfXJ4vkc05mcG1ff3GuUkjY6YnpiSvX4nMth0T8RmuNaIk3kbAgkbBIJi3spIVtJ\u002BiwE6RTCZyOBE46QTadJOsk6cwkyWWSJBOQ78xx/6ahNQ9s\u002B\u002ByhgY0jPxje\u002BtCeRNK2G17eBg2EjP8bCd0tRECLUCpXEEkwvG5dz7qhoScH79v5o77hbbvsDsdpHhNHG0LxlpVDovHaiP/aRJEzfzvPlavXyKSdvBY5PnDfgy92OLne5rFxNLrsE\u002B6QiDFlgpKuXJbizAyn//w\u002BH5z9OxfHPibdkbYty/oOUGgeH0eLhvQnIVRfjInKz\u002B3dzvPPPcPJrx/j2FNf4cjhg\u002Bzfv4\u002BUnWoe2oIWl5nX3x0k/COADnds/UAvBx/bxdNfephjRx5j3\u002BgoduqOmqahh9aNLpucq/Lrt8fjXerYvrGLJx7spzhf5ZdvjceWYZgJcP9AnkdHCoiVALGwGtNeW7TskNYmIRImxZulgKl0gSmnr25F5VCuKJSAr4SZkk8xXaDo9FF0\u002Bilm\u002BpmRLCUvMAlUCUrHZ1oerRoKj4E6LAtxcg2GnTJC1oLosE8629Snw6QAHZroFcmhiVB4HNx5XChkI\u002BblYAhpVNPO3w6tLlthLjKT3Z68ACpKB7frGENTHtItwkYEyys1GH4NIVx1mISsSrmpTzXmMkGvzGPNLtMores7ZCct\u002BrtTDKibrA2mjfnT9HfUyDs2WiBhWazJp\u002Bjzp\u002BmrFimEtjpRIZtO3pLBCneoIQ6f\u002BdZLp1564YXjj4xuxekwXM0GGNdELjIlCXVtKG3alIqeR/dmjFf1\u002BcfYNV79xc848/tTe9zFmbPxeeNo0lD7XY3axJQ9pkiri9pYWMuh6lHVmixXgiZCGq2My6LJTaUIgYoKNFBhjjIGShkiQThGick9gZjiTVRY2sQnWwYtYa\u002B0RoXLm14wWfhXb4/zm3fGee2dcV57d5zX373Kh/\u002BeRauImBmjVei20HU6cm1IfCVoI\u002BqofoZKVXNxosy/3BwXvDwXKnkuVvKMzUFxvmpco4yLVBhJUURFV6WlrrWVoH0eCvUgCFgJpHNVo3U4oUtvJVJTc4eLkUjocU0tI9AmNNTUm7fufHb37tGRobX92HaCRTfgzMcL6HwPWLcC0qq69GU0Q4Vcw\u002BRRxBXnK9yY9Zgt1ZgrVZlbqnJzwWN2cQk7lZ5Y3b9xfWHdZ3YkOgd3lCt2N7XZ\u002BgneQGjTlpDQQB\u002BppMWi63P2UntCvY5mfW/OEFGCJnSVwLnxOa5MLVELfJbcGm7VJ5FKsX54Mw/sOXBg5/5DR3fsO3i0lh05Ona1nGH\u002Br29E726pGHX0eRP5XQT8WqMphYiJsvonUhhpOnT3loEcR/f289SePp4cLfDlXb0c3rGax0d6eHTLKkaHO7m3u7VgayNqXU9sAtiW4Ez/B6d4pW4pbwHLMt9mQfi9FulEKXMWmpwkVGuKxVKV4qzL\u002BOQSY1fnOX95jg/OT3P5\u002BlJ8emgmRBhd0QtX5zv4/pGNPP/ERr57eAPfPriBE48Pc\u002BLAMHs3rzGJL9SPxEhF2g2U4FYDyp5iyQsouwrXC3A9H9cL8NvkghaXKa3NqjWAhZOySadsUnaSdDJJ2rZJ2QmSCYtAIIjCvp6Twgwt4PsK1/NZ8nzKnk\u002BpbgElz6fm34lQ/SCMIsaEstGKOQJMaIPGPJMoa0fRpsLUgVBT4c54PmXXkCpXAsqVALcSrIyQCkuQW8SidqMxY7eemYRoSEc5ybhP8H1N2QsouQElzxAph7tTrgT4wR0JaQIlLJZqXJta5HrdFpgoLjBRXIzZAjeKpn1yeoGp6XlzvTmPV6mhQ0GbnYmRcX3Krvm/nYYayo/9h7526guHnj7eWyhQKrn11UZftDq8GveFP9Po6LmgMUd7oquPkc2D3JtPcmF8nnJFGSKhfspewHypxtjVeS5/dPq3XHn1G20JbRs98BOnq/eL5bIbb75rDG0/smn37of687bFpeuLeLUAr6LwqgFeVVGpKaq\u002BZmrGZXLsj8sT\u002Br9h7dGf0rP3uebmtlg49yb/ff2Hzc2fGvwPrhm8Nr6VawwAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-02-24T22:49:04.34Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
