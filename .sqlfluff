@@ -1,0 +1,9 @@
+[sqlfluff]
+dialect = tsql
+exclude_rules = L009
+
+[sqlfluff:rules]
+max_line_length = 120
+capitalisation.policy = consistent
+indentation.indent_unit = space
+

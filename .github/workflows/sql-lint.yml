@@ -1,0 +1,32 @@
+name: SQL Lint CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint-sql:
+    name: Lint SQL with SQLFluff
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install SQLFluff
+        run: pip install sqlfluff
+
+      - name: Lint SQLQueries
+        run: sqlfluff lint SQLQueries/ --dialect tsql
+
+      - name: Lint TableCreationScript
+        run: sqlfluff lint TableCreationScript/ --dialect tsql
+
+      - name: Lint PowerBIQuery
+        run: sqlfluff lint PowerBIQuery/ --dialect tsql
