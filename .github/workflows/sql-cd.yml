@@ -1,12 +1,14 @@
 name: CD - Promote SQLQA to SQLProd
 
 on:
-  push:
-    paths:
-      - 'SQLQA/**'
+  workflow_run:
+    workflows: ["CI - Lint SQL"]  # Replace with your actual CI workflow name
+    types:
+      - completed
 
 jobs:
   promote:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
