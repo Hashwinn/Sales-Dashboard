@@ -1,1 +1,1 @@
-SELECT 1 AS example_column;
+SELECT 1 AS abcd;
