@@ -1,1 +1,1 @@
-SELECT 1 AS test_column;
+SELECT 1 AS date;
