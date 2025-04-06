@@ -1,1 +1,1 @@
-SELECT 1 AS abcd;
+SELECT 1 AS cust;
