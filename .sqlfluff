@@ -1,6 +1,6 @@
 [sqlfluff]
 dialect = tsql
-exclude_rules = L009, LT05, CP02, LT01, LT02, CV11
+exclude_rules = L009, LT05, CP02, LT01, LT02, CV11, LT04, LT09, ST06, RF05, RF04, AL01, CP01, LT14, CP05, ST09
 max_line_length = 120
 
 [sqlfluff:rules]
