@@ -1,37 +1,27 @@
-name: SQLFluff CD - Promote Tested Files
+name: CD - Promote SQLQA to SQLProd
 
 on:
   push:
     paths:
       - 'SQLQA/**'
-    branches:
-      - main
 
 jobs:
-  promote-to-prod:
+  promote:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Git identity
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Copy files to SQLProd
+      - name: Copy files from SQLQA to SQLProd
         run: |
           mkdir -p SQLProd
-          cp -r SQLQA/*.sql SQLProd/
+          cp -v SQLQA/*.sql SQLProd/
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
+          git config user.name "Hashwin Bot"
+          git config user.email "hashwin@users.noreply.github.com"
           git add SQLProd/
-          git commit -m "CD: Promoted SQL files from SQLQA to SQLProd" || echo "No changes to commit"
-
-      - name: Push to main branch
-        env:
-          TOKEN: ${{ secrets.CD_TOKEN }}
-        run: |
-          git remote set-url origin https://x-access-token:${TOKEN}@github.com/Hashwinn/Sales-Dashboard.git
-          git push origin main
+          git commit -m "CD: Promoted SQL files from SQLQA to SQLProd"
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Hashwinn/Sales-Dashboard.git HEAD:main
