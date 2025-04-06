@@ -1,0 +1,20 @@
+
+stages:
+  - lint
+
+lint_sql:
+  stage: lint
+  image: python:3.10
+
+  before_script:
+    - pip install sqlfluff
+
+  script:
+    - echo "Linting SQL files..."
+    - sqlfluff lint SQLQueries/ --dialect tsql
+    - sqlfluff lint TableCreationScript/ --dialect tsql
+    - sqlfluff lint PowerBIQuery/ --dialect tsql
+
+  allow_failure: false
+  only:
+    - main
