@@ -1,0 +1,44 @@
+name: SQL CD - Promote SQL to Prod
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'SQLQA/**'
+      - '.github/workflows/sql-cd.yml'
+
+jobs:
+  promote-to-prod:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install SQLFluff
+        run: |
+          pip install sqlfluff
+
+      - name: Lint SQLQA Files
+        run: |
+          sqlfluff lint SQLQA/ --dialect tsql
+
+      - name: Move Linted Files to SQLProd
+        if: success()
+        run: |
+          mkdir -p SQLProd
+          cp SQLQA/*.sql SQLProd/
+
+      - name: Commit Changes
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add SQLProd/
+          git commit -m "CD: Promoted SQL files from SQLQA to SQLProd"
+          git push
