@@ -20,7 +20,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config user.name "Hashwin Bot"
+          git config user.name "CD_TOKEN"
           git config user.email "hashwin@users.noreply.github.com"
           git add SQLProd/
           git commit -m "CD: Promoted SQL files from SQLQA to SQLProd"
