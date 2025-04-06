@@ -1,1 +1,1 @@
-SELECT 1 AS date;
+SELECT 1 AS checkk;
