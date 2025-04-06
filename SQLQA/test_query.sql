@@ -1,1 +1,1 @@
-SELECT 1 AS customer;
+SELECT 1 AS tes;
