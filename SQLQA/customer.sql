@@ -1,1 +1,1 @@
-select 1 as date;
+SELECT 1 AS cust;
