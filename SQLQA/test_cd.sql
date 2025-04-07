@@ -1,1 +1,1 @@
-SELECT 1 AS checkk;
+SELECT 1 AS slack;
