@@ -2,7 +2,7 @@ name: CD - Promote SQLQA to SQLProd
 
 on:
   workflow_run:
-    workflows: ["CI - Lint SQL"]  # Replace with your actual CI workflow name
+    workflows: ["CI - Lint SQL"]
     types:
       - completed
 
@@ -12,20 +12,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository with PAT
+      - name: Checkout main branch with PAT
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_PAT }}
+          ref: main
 
-      - name: Promote tested SQL files to SQLProd
+      - name: Copy SQLQA files to temporary folder
+        run: |
+          mkdir -p tmp_sql
+          cp -v SQLQA/*.sql tmp_sql/
+
+      - name: Checkout prod branch
+        run: |
+          git fetch origin prod
+          git checkout prod
+
+      - name: Create SQLProd folder if it doesn't exist
         run: |
           mkdir -p SQLProd
-          cp -v SQLQA/*.sql SQLProd/
 
-      - name: Commit and push promoted files
+      - name: Move files from temp folder to SQLProd in prod branch
+        run: |
+          cp -v tmp_sql/*.sql SQLProd/
+
+      - name: Commit and push to prod branch
         run: |
           git config user.name "Hashwin Bot"
           git config user.email "hashwin@users.noreply.github.com"
           git add SQLProd/
-          git commit -m "CD: Promoted SQL files from SQLQA to SQLProd" || echo "Nothing to commit"
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Hashwinn/Sales-Dashboard.git HEAD:main
+          git commit -m "CD: Promoted SQL files from SQLQA (main) to SQLProd (prod)" || echo "Nothing to commit"
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Hashwinn/Sales-Dashboard.git prod
