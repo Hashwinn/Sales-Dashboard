@@ -1,2 +1,2 @@
 -- SQLProd/test_deploy.sql
-SELECT GETDATE();
+SELECT 1 as AA;
