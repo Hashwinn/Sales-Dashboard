@@ -1,1 +1,1 @@
-SELECT 1 AS Calend;
+SELECT 1 AS cal;
