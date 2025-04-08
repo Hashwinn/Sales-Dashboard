@@ -1,1 +1,1 @@
-SELECT 1 AS num;
+SELECT 1 AS numb;
